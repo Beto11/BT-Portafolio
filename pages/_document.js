@@ -26,6 +26,13 @@ export default class Document extends NextDocument {
             sizes="192x192"
             href="/android-chrome-192x192.png"
           />
+          <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="384x384"
+            href="/android-chrome-384x384.png"
+          />
         </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />

@@ -40,6 +40,10 @@ import {
   SiJava,
   SiJquery,
   SiPostgresql,
+  SiMicrosoftsqlserver,
+  SiKalilinux,
+  SiWireshark,
+  SiSplunk,
 } from "react-icons/si";
 import Section from "../components/section";
 import Layout from "../components/layout/article";
@@ -104,10 +108,8 @@ const About = () => {
                   color="purple.500"
                   boxSize={6}
                 />
-                <HobbieItem>Cats</HobbieItem> <br></br> I have a 2 year old
-                orange tabby named Benito, who is the inspiration of the 3d
-                model of this website! I also recently adopted a tabby point
-                siamese who was found on the street.
+                <HobbieItem>Gym</HobbieItem> <br></br> I've been working out a
+                lot these past few months, mainly weightlifting.
               </ListItem>
               <ListItem>
                 <ListIcon
@@ -115,9 +117,19 @@ const About = () => {
                   color="purple.500"
                   boxSize={6}
                 />
-                <HobbieItem>Violin</HobbieItem> <br></br> I started playing when
-                I was 15 years old. I play pretty decent but practice very
-                little nowadays.
+                <HobbieItem>Dogs</HobbieItem> <br></br> I have a 6 year old Dog
+                named Firulais or Firu for short, a little chihuahua that i
+                love!
+              </ListItem>
+              <ListItem>
+                <ListIcon
+                  as={ChevronRightIcon}
+                  color="purple.500"
+                  boxSize={6}
+                />
+                <HobbieItem>Camping</HobbieItem> <br></br> I started to go
+                camping since 2011 with a leadership group and enjoyed it since
+                then.
               </ListItem>
               <ListItem>
                 <ListIcon
@@ -126,34 +138,7 @@ const About = () => {
                   boxSize={6}
                 />
                 <HobbieItem>Music</HobbieItem> <br></br> I enjoy a wide variety
-                of music, but I specially like alt rock and classical music.
-              </ListItem>
-              <ListItem>
-                <ListIcon
-                  as={ChevronRightIcon}
-                  color="purple.500"
-                  boxSize={6}
-                />
-                <HobbieItem>Chess</HobbieItem> <br></br> I play a lot of online
-                chess. You can find me on&nbsp;
-                <a
-                  href="https://www.chess.com/member/luisyerik"
-                  target={"_blank"}
-                >
-                  <Text display={"inline"} textDecoration="underline">
-                    chess.com
-                  </Text>
-                  .
-                </a>
-              </ListItem>
-              <ListItem>
-                <ListIcon
-                  as={ChevronRightIcon}
-                  color="purple.500"
-                  boxSize={6}
-                />
-                <HobbieItem>Gym</HobbieItem> <br></br> I've been working out a
-                lot these past few months, mainly weightlifting.
+                of music, specially when im on my car.
               </ListItem>
             </List>
           </Box>
@@ -214,19 +199,11 @@ const About = () => {
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon
-                      as={SiDocker}
+                      as={SiMicrosoftsqlserver}
                       color="purple.500"
                       boxSize={6}
                     ></ListIcon>
-                    Docker
-                  </ListItem>
-                  <ListItem mt={3}>
-                    <ListIcon
-                      as={SiMongodb}
-                      color="purple.500"
-                      boxSize={6}
-                    ></ListIcon>
-                    MongoDB
+                    MicsosoftSQL
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon
@@ -243,14 +220,6 @@ const About = () => {
                       boxSize={6}
                     ></ListIcon>
                     Git
-                  </ListItem>
-                  <ListItem mt={3}>
-                    <ListIcon
-                      as={SiFlask}
-                      color="purple.500"
-                      boxSize={6}
-                    ></ListIcon>
-                    Flask
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon
@@ -278,6 +247,30 @@ const About = () => {
                       boxSize={6}
                     ></ListIcon>
                     Azure
+                  </ListItem>
+                  <ListItem mt={3}>
+                    <ListIcon
+                      as={SiKalilinux}
+                      color="purple.500"
+                      boxSize={6}
+                    ></ListIcon>
+                    Kali
+                  </ListItem>
+                  <ListItem mt={3}>
+                    <ListIcon
+                      as={SiWireshark}
+                      color="purple.500"
+                      boxSize={6}
+                    ></ListIcon>
+                    WireShark
+                  </ListItem>
+                  <ListItem mt={3}>
+                    <ListIcon
+                      as={SiSplunk}
+                      color="purple.500"
+                      boxSize={6}
+                    ></ListIcon>
+                    Splunk
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon
@@ -321,14 +314,6 @@ const About = () => {
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon
-                      as={SiScikitlearn}
-                      color="purple.500"
-                      boxSize={6}
-                    ></ListIcon>
-                    Scikitlearn
-                  </ListItem>
-                  <ListItem mt={3}>
-                    <ListIcon
                       as={SiJava}
                       color="purple.500"
                       boxSize={6}
@@ -342,14 +327,6 @@ const About = () => {
                       boxSize={6}
                     ></ListIcon>
                     jQuery
-                  </ListItem>
-                  <ListItem mt={3}>
-                    <ListIcon
-                      as={SiFigma}
-                      color="purple.500"
-                      boxSize={6}
-                    ></ListIcon>
-                    Figma
                   </ListItem>
                 </List>
               </Box>
