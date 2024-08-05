@@ -203,7 +203,7 @@ const About = () => {
                       color="purple.500"
                       boxSize={6}
                     ></ListIcon>
-                    MicsosoftSQL
+                    MySQL
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon

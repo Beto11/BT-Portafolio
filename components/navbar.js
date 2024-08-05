@@ -26,11 +26,11 @@ const LinkItem = ({ href, path, children }) => {
         p={2}
         color={inactiveColor}
         fontFamily="poppins"
-        _hover={{ color: "#D66F3E" }}
+        _hover={{ color: "#8b37fa" }}
         textDecoration={active ? "underline" : "none"}
         textUnderlineOffset={8}
         textDecorationThickness={3}
-        textDecorationColor="#D66F3E"
+        textDecorationColor="#8b37fa"
       >
         {children}
       </Link>
