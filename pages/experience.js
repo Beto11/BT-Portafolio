@@ -25,57 +25,65 @@ const Experience = () => {
           </Heading>
           <Divider mb={10} borderColor={useColorModeValue("black", "gray")} />
           <ExperienceItem
-            company="Intel"
-            position="Cloud Software Engineer Intern"
-            dateStart="December 2021"
+            company="Tecnologias Datum01"
+            position="Cybersecurity Engineer"
+            dateStart="January 2024"
             dateEnd="Present"
           >
-            1-year internship assigned to the Google Cloud team.
+            Assigned to the Microsegmentation team.
             <ListExperienceItem>
-              Analyzed performance data of Google's Hyperprotobench project
-              running with Control Enforcement Technology (CET) using Linux's
-              perf tool.
+              Utilize <Highlight>Guardicore</Highlight> for precise network
+              traffic microsegmentation, oversee{" "}
+              <Highlight>SOC operations</Highlight> by analyzing network logs,
+              provide L1 support, and enhance overall cybersecurity.
             </ListExperienceItem>
             <ListExperienceItem>
-              Built a dashboard for the project inside Intel's Services
-              Framework website with Flask.
-            </ListExperienceItem>
-            <ListExperienceItem>
-              Implemented several plots using Pandas and the visualization
-              library Bokeh.
+              Manage sessions with clients to address and resolve pending
+              issues, ensuring client satisfaction and maintaining strong
+              professional relationships.
             </ListExperienceItem>
           </ExperienceItem>
           <ExperienceItem
-            company="MSCI"
-            position="Analytics Software Engineer Intern"
-            dateStart="July 2021"
-            dateEnd="December 2021"
+            company="Tecnológico de Monterrey"
+            position="CyberSecurity Bootcamp"
+            dateStart="August 2023"
+            dateEnd="March 2024"
           >
-            6-month internship assigned to the Model Engineering team.
+            6-month CyberSecurity bootcamp.
             <ListExperienceItem>
-              Implemented several Azure Pipelines for building and testing a
-              company web application, as well as building data models. Started
-              the migration of the app to Azure with docker.
+              Developing skills in cybersecurity, including threat assessment,
+              network security, penetration testing, server configuration,
+              incident response, and data forensics.
             </ListExperienceItem>
             <ListExperienceItem>
-              Pushed several fixes and changes to the web app using MATLAB and
-              Java.
+              Utilized <Highlight>Microsoft Azure</Highlight> for cloud
+              solutions and infrastructure management.
+            </ListExperienceItem>
+            <ListExperienceItem>
+              Conducted security assessments using
+              <Highlight>Kali Linux</Highlight> for penetration testing.
+            </ListExperienceItem>
+            <ListExperienceItem>
+              Developed and automated tasks with{" "}
+              <Highlight>PowerShell</Highlight> and <Highlight>Bash</Highlight>{" "}
+              scripting to enhance operational efficiency.
             </ListExperienceItem>
           </ExperienceItem>
           <ExperienceItem
-            company="Epicor"
-            position="Web Development Intern"
-            dateStart="January 2021"
-            dateEnd="July 2021"
+            company="EZI Metales"
+            position="Web Development/Data Analysis"
+            dateStart="July 2023"
+            dateEnd="January 2024"
           >
-            6-month internship assigned to the Web Marketing team.
+            Assigned to the operational excellence team.
             <ListExperienceItem>
-              Worked with a Quality Assurance team by manually testing the new
-              brand website's features and UI.
+              Utilized <Highlight>Power BI</Highlight> and{" "}
+              <Highlight>MySQL</Highlight> to transform intricate data into
+              visual insights
             </ListExperienceItem>
             <ListExperienceItem>
-              Created and managed content for the different regions of the
-              website with the company's CMS, EpiServer.
+              Designed full-stack <Highlight>REACT</Highlight> web applications
+              to enhance data organization and address internal challenges.
             </ListExperienceItem>
           </ExperienceItem>
         </Section>
