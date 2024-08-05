@@ -22,6 +22,7 @@ export const ProjectItem = ({
   dateStart,
   dateEnd,
   website,
+  documentation,
   stack,
   code,
   src,
@@ -30,7 +31,7 @@ export const ProjectItem = ({
     <Box>
       <ChevronLeftIcon /> &nbsp;
       <NextLink href="/projects" scroll={false}>
-        <Link> Back to Projects</Link>
+        <Link>Back to Projects</Link>
       </NextLink>
     </Box>
     <Heading mt={2} mb={2}>
@@ -53,7 +54,7 @@ export const ProjectItem = ({
           {stack}
         </Text>
       </ListItem>
-      {website ? (
+      {website && (
         <ListItem>
           <ListIcon
             as={ChevronRightIcon}
@@ -65,14 +66,29 @@ export const ProjectItem = ({
           <Text ml={10} fontSize={14}>
             <Link target="_blank" href={website}>
               {website.slice(8)}&nbsp;
-              <ExternalLinkIcon></ExternalLinkIcon>
+              <ExternalLinkIcon />
             </Link>
           </Text>
         </ListItem>
-      ) : (
-        <span></span>
       )}
-      {code ? (
+      {documentation && (
+        <ListItem>
+          <ListIcon
+            as={ChevronRightIcon}
+            color="purple.500"
+            boxSize={6}
+            ml={3}
+          />
+          <HobbieItem>Documentation</HobbieItem>
+          <Text ml={10} fontSize={14}>
+            <Link target="_blank" href={documentation}>
+              {documentation.slice(8)}&nbsp;
+              <ExternalLinkIcon />
+            </Link>
+          </Text>
+        </ListItem>
+      )}
+      {code && (
         <ListItem>
           <ListIcon
             as={ChevronRightIcon}
@@ -84,22 +100,22 @@ export const ProjectItem = ({
           <Text ml={10} fontSize={14}>
             <Link target="_blank" href={code}>
               {code.slice(8)}&nbsp;
-              <ExternalLinkIcon></ExternalLinkIcon>
+              <ExternalLinkIcon />
             </Link>
           </Text>
         </ListItem>
-      ) : (
-        <span></span>
       )}
-
-      {[...Array(src)].map((item, i) => (
+      {Array.from({ length: src }).map((_, i) => (
         <Image
+          key={i}
           src={`/projects/${title.toLowerCase()}${i > 0 ? i + 1 : ""}.png`}
           borderRadius="lg"
           w="full"
+          h="auto"
+          objectFit="cover"
           mb={4}
           mt={8}
-        ></Image>
+        />
       ))}
     </List>
   </Box>

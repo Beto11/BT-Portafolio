@@ -8,16 +8,12 @@ import {
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
-import Deskup from "../public/projects/desk-up.png";
-import Botdesaparecidx from "../public/projects/botdesaparecidx.png";
-import Stags from "../public/projects/stags.png";
-import Pato from "../public/projects/threejs duck.png";
-import Web from "../public/projects/web development course.png";
-import Kochrennen from "../public/projects/kochrennen2.png";
+import DnaAnalysis from "../public/projects/dna-analysis.png";
 import Wine from "../public/projects/wine.jpg";
-import Luyer from "../public/projects/luyer.png";
+import Bixo from "../public/projects/bixo.png";
 import Wigo from "../public/projects/wigo.png";
-import Changelog from "../public/projects/changelog.png";
+import Acid from "../public/projects/Acid Neutralization Simulator App.png";
+import Huerto from "../public/projects/build-a-huerto.png";
 import { useColorModeValue } from "@chakra-ui/react";
 import Layout from "../components/layout/article";
 
@@ -37,21 +33,19 @@ const Projects = () => {
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
               <WorkGridItem
-                id="botdesaparecidx"
-                title="BotDesaparecidx"
-                thumbnail={Botdesaparecidx}
+                id="certification"
+                title="Certifications"
+                thumbnail={Bixo}
               >
-                Social media bot for spreading missing person cases in México
+                Here are some of the certifications I have earned, demonstrating
+                my commitment to continuous learning and professional
+                development
               </WorkGridItem>
             </Section>
             <Section>
-              <WorkGridItem id="deskup" title="Desk-Up" thumbnail={Deskup}>
-                Web application for creating desk setups
-              </WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem id="stags" title="Stags" thumbnail={Stags}>
-                Web application to create playlists based on tags.
+              <WorkGridItem id="bixo" title="Bixo Compiler" thumbnail={Bixo}>
+                Created a programming language and compiler, Bixo, in
+                collaboration with a partner as part of a team-based project.
               </WorkGridItem>
             </Section>
             <Section>
@@ -64,11 +58,7 @@ const Projects = () => {
                 learning.
               </WorkGridItem>
             </Section>
-            <Section>
-              <WorkGridItem id="luyer" title="Luyer Compiler" thumbnail={Luyer}>
-                Created my own programming language and compiler: Luyer.
-              </WorkGridItem>
-            </Section>
+
             <Section>
               <WorkGridItem
                 id="wigo"
@@ -80,35 +70,31 @@ const Projects = () => {
             </Section>
             <Section>
               <WorkGridItem
-                id="changelog"
-                title="ChangeLog"
-                thumbnail={Changelog}
+                id="dna"
+                title="DNA-Analysis"
+                thumbnail={DnaAnalysis}
               >
-                Built a simple changelog web application for different projects.
-              </WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem id="duck" title="ThreeJS Duck" thumbnail={Pato}>
-                3D scene of a duck built with Three.js
+                C Program that analyzes DNA samples
               </WorkGridItem>
             </Section>
             <Section>
               <WorkGridItem
-                id="course"
-                title="Web Development Course"
-                thumbnail={Web}
+                id="acid"
+                title="Acid Neutralization Simulator"
+                thumbnail={Acid}
               >
-                Built a complete online course for Web Development with HTML,
-                CSS and JavaScript.
+                Built a simple Unity application for a middle school for them to
+                practice a lab.
               </WorkGridItem>
             </Section>
             <Section>
               <WorkGridItem
-                id="kochrennen"
-                title="Kochrennen"
-                thumbnail={Kochrennen}
+                id="huerto"
+                title="Build-a-Huerto"
+                thumbnail={Huerto}
               >
-                Videogame inspired on the cooking game Overcooked.
+                Built a web platform designed to help people start and manage
+                their own vegetable gardens with PHP, CSS and JavaScript.
               </WorkGridItem>
             </Section>
           </SimpleGrid>

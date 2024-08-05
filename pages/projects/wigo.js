@@ -5,7 +5,7 @@ import Section from "../../components/section";
 import Paragraph from "../../components/paragraph";
 import Highlight from "../../components/highlight";
 
-const Deskup = () => {
+const Wigo = () => {
   return (
     <Layout title="Wigo">
       <Container>
@@ -42,4 +42,4 @@ const Deskup = () => {
   );
 };
 
-export default Deskup;
+export default Wigo;
