@@ -1,4 +1,4 @@
-import { Container, Link } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import { ProjectItem } from "../../components/project_item";
 import Layout from "../../components/layout/article";
 import Section from "../../components/section";
@@ -7,7 +7,7 @@ import Highlight from "../../components/highlight";
 
 const Acid = () => {
   return (
-    <Layout title="ChangeLog">
+    <Layout title="Acid Neutralization">
       <Container>
         <Section>
           <ProjectItem

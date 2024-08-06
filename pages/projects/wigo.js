@@ -1,4 +1,4 @@
-import { Container, Link } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import { ProjectItem } from "../../components/project_item";
 import Layout from "../../components/layout/article";
 import Section from "../../components/section";
@@ -22,19 +22,16 @@ const Wigo = () => {
             <Paragraph>
               This was project for a small networking company. They asked for a
               simple website where users could customize different network
-              packages, depending on the service they select. To build it, I
-              used <Highlight>MERN</Highlight> since I wanted to practice my
-              React skills. I made simple design with
-              <Highlight>Figma</Highlight> and coded a small API to get the data
-              to be used on the customization part.
+              packages, depending on the service they select. I utilized{" "}
+              <Highlight>REACT</Highlight> since i wanted to improve on my
+              skills and found it as a great web oportunity.
             </Paragraph>
           </ProjectItem>
           <Paragraph>
             This project was great for my front-end skills, specifically React
             because I learned a lot about&nbsp;
-            <Highlight>state management</Highlight>. I had initially thought it
-            would be pretty easy but it got more complicated as I had to handle
-            many states for the customization part.
+            <Highlight>state management</Highlight>. Although it seemed easy the
+            vast amount of stated made it complicated to handle.
           </Paragraph>
         </Section>
       </Container>

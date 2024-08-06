@@ -1,15 +1,12 @@
 import {
   Container,
-  Box,
   Divider,
-  Text,
   Heading,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layout/article";
 import Highlight from "../components/highlight";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   ExperienceItem,
   ListExperienceItem,

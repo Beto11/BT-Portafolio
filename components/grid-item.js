@@ -6,10 +6,9 @@ import {
   LinkBox,
   LinkOverlay,
   Heading,
-  background,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
-import { useColorModeValue } from "@chakra-ui/react";
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box

@@ -24,19 +24,13 @@ import {
   SiPython,
   SiCplusplus,
   SiGit,
-  SiFlask,
   SiLinux,
-  SiMongodb,
   SiMicrosoftazure,
-  SiFigma,
   SiSwift,
   SiPandas,
-  SiScikitlearn,
   SiExpress,
   SiFirebase,
   SiReact,
-  SiDocker,
-  SiSqlite,
   SiJava,
   SiJquery,
   SiPostgresql,
@@ -44,6 +38,8 @@ import {
   SiKalilinux,
   SiWireshark,
   SiSplunk,
+  SiPowershell,
+  SiPowerbi,
 } from "react-icons/si";
 import Section from "../components/section";
 import Layout from "../components/layout/article";
@@ -108,8 +104,8 @@ const About = () => {
                   color="purple.500"
                   boxSize={6}
                 />
-                <HobbieItem>Gym</HobbieItem> <br></br> I've been working out a
-                lot these past few months, mainly weightlifting.
+                <HobbieItem>Gym</HobbieItem> <br></br> I like working out, helps
+                me as a way of distraction, i mainly focus on weightlifting.
               </ListItem>
               <ListItem>
                 <ListIcon
@@ -229,6 +225,14 @@ const About = () => {
                     ></ListIcon>
                     Linux
                   </ListItem>
+                  <ListItem mt={3}>
+                    <ListIcon
+                      as={SiPowerbi}
+                      color="purple.500"
+                      boxSize={6}
+                    ></ListIcon>
+                    Powerbi
+                  </ListItem>
                 </List>
               </Box>
               <Center mt={8} height="90%">
@@ -263,6 +267,14 @@ const About = () => {
                       boxSize={6}
                     ></ListIcon>
                     WireShark
+                  </ListItem>
+                  <ListItem mt={3}>
+                    <ListIcon
+                      as={SiPowershell}
+                      color="purple.500"
+                      boxSize={6}
+                    ></ListIcon>
+                    Powershell
                   </ListItem>
                   <ListItem mt={3}>
                     <ListIcon

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import NextLink from "next/link";
 import {
   Box,
@@ -39,21 +40,35 @@ export const ProjectItem = ({
     </Heading>
     {children}
     <List mt={5}>
-      <ListItem>
-        <ListIcon as={ChevronRightIcon} color="purple.500" boxSize={6} ml={3} />
-        <HobbieItem>Date</HobbieItem>
-        <Text ml={10} fontSize={14}>
-          {dateStart}
-          {dateEnd ? ` — ${dateEnd}` : ""}
-        </Text>
-      </ListItem>
-      <ListItem>
-        <ListIcon as={ChevronRightIcon} color="purple.500" boxSize={6} ml={3} />
-        <HobbieItem>Stack</HobbieItem>
-        <Text ml={10} fontSize={14}>
-          {stack}
-        </Text>
-      </ListItem>
+      {(dateStart || dateEnd) && (
+        <ListItem>
+          <ListIcon
+            as={ChevronRightIcon}
+            color="purple.500"
+            boxSize={6}
+            ml={3}
+          />
+          <HobbieItem>Date</HobbieItem>
+          <Text ml={10} fontSize={14}>
+            {dateStart}
+            {dateEnd ? ` — ${dateEnd}` : ""}
+          </Text>
+        </ListItem>
+      )}
+      {stack && (
+        <ListItem>
+          <ListIcon
+            as={ChevronRightIcon}
+            color="purple.500"
+            boxSize={6}
+            ml={3}
+          />
+          <HobbieItem>Stack</HobbieItem>
+          <Text ml={10} fontSize={14}>
+            {stack}
+          </Text>
+        </ListItem>
+      )}
       {website && (
         <ListItem>
           <ListIcon
@@ -105,7 +120,7 @@ export const ProjectItem = ({
           </Text>
         </ListItem>
       )}
-      {Array.from({ length: src }).map((_, i) => (
+      {Array.from({ length: src || 0 }).map((_, i) => (
         <Image
           key={i}
           src={`/projects/${title.toLowerCase()}${i > 0 ? i + 1 : ""}.png`}
@@ -120,3 +135,15 @@ export const ProjectItem = ({
     </List>
   </Box>
 );
+
+ProjectItem.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string.isRequired,
+  dateStart: PropTypes.string,
+  dateEnd: PropTypes.string,
+  website: PropTypes.string,
+  documentation: PropTypes.string,
+  stack: PropTypes.string,
+  code: PropTypes.string,
+  src: PropTypes.number,
+};

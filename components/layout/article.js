@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
+import PropTypes from "prop-types";
 import { GridItemStyle } from "../grid-item";
 
 const variants = {
@@ -15,8 +16,8 @@ const Layout = ({ children, title }) => {
       animate="enter"
       exit="exit"
       variants={variants}
-      trainsition={{ duration: 1.0, type: "easeInOut" }}
-      style={{ positon: "relative" }}
+      transition={{ duration: 1.0, type: "easeInOut" }}
+      style={{ position: "relative" }}
     >
       <>
         {title && (
@@ -25,10 +26,15 @@ const Layout = ({ children, title }) => {
           </Head>
         )}
         {children}
-        <GridItemStyle></GridItemStyle>
+        <GridItemStyle />
       </>
     </motion.article>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string,
 };
 
 export default Layout;

@@ -5,6 +5,7 @@ import {
   Divider,
   Box,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
@@ -14,7 +15,7 @@ import Bixo from "../public/projects/bixo.png";
 import Wigo from "../public/projects/wigo.png";
 import Acid from "../public/projects/Acid Neutralization Simulator App.png";
 import Huerto from "../public/projects/build-a-huerto.png";
-import { useColorModeValue } from "@chakra-ui/react";
+import Cert from "../public/projects/certifications.png";
 import Layout from "../components/layout/article";
 
 const Projects = () => {
@@ -32,11 +33,7 @@ const Projects = () => {
           </Section>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
-              <WorkGridItem
-                id="certification"
-                title="Certifications"
-                thumbnail={Bixo}
-              >
+              <WorkGridItem id="cert" title="Certifications" thumbnail={Cert}>
                 Here are some of the certifications I have earned, demonstrating
                 my commitment to continuous learning and professional
                 development
@@ -58,7 +55,6 @@ const Projects = () => {
                 learning.
               </WorkGridItem>
             </Section>
-
             <Section>
               <WorkGridItem
                 id="wigo"
@@ -70,21 +66,12 @@ const Projects = () => {
             </Section>
             <Section>
               <WorkGridItem
-                id="dna"
-                title="DNA-Analysis"
-                thumbnail={DnaAnalysis}
-              >
-                C Program that analyzes DNA samples
-              </WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem
                 id="acid"
                 title="Acid Neutralization Simulator"
                 thumbnail={Acid}
               >
-                Built a simple Unity application for a middle school for them to
-                practice a lab.
+                Developed a Unity app for a middle school so students can easily
+                practice their lab activities.
               </WorkGridItem>
             </Section>
             <Section>
@@ -94,7 +81,16 @@ const Projects = () => {
                 thumbnail={Huerto}
               >
                 Built a web platform designed to help people start and manage
-                their own vegetable gardens with PHP, CSS and JavaScript.
+                their own vegetable gardens.
+              </WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem
+                id="dna"
+                title="DNA-Analysis"
+                thumbnail={DnaAnalysis}
+              >
+                Program that analyzes DNA samples
               </WorkGridItem>
             </Section>
           </SimpleGrid>
