@@ -32,8 +32,8 @@ const Certification = () => {
               (February 8 2024 - February 7 2027)
             </ListExperienceItem>
             <ListExperienceItem>
-              <Highlight>Image and Video Manager</Highlight>Image and Video
-              Manager<br></br> (June 2024 - June 2027)
+              <Highlight>Image and Video Manager</Highlight>
+              <br></br> (June 2024 - June 2027)
             </ListExperienceItem>
           </ExperienceItem>
           <ExperienceItem
